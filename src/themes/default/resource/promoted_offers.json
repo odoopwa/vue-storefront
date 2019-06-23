@@ -1,30 +1,30 @@
 {
   "mainBanners": [
 	  {
-	    "title": "Office casual",
-	    "subtitle": "Collection",
+	    "title": "Son tendencia",
+	    "subtitle": "Conoce los nuevos vaqueros",
 	    "image": "/assets/ban1.jpg",
 	    "link": "/c/women-20"
 	  }
   ],
   "smallBanners": [
     {
-      "title": "Shine on",
-      "subtitle": "Accesories",
+      "title": "Temporada de verano",
+      "subtitle": "Las camisetas que buscas",
       "image": "/assets/ban2.jpg",
       "link": "/c/men-11"
     },
     {
-      "title": "Spring is coming",
-      "subtitle": "Hats",
+      "title": "Con estilo propio",
+      "subtitle": "Cazadoras de moda",
       "image": "/assets/ban3.jpg",
       "link": "/c/gear-3"
     }
   ],
   "productBanners": [
 	  {
-	    "title": "Spring is coming",
-	    "subtitle": "Hats",
+	    "title": "Con estilo propio",
+	    "subtitle": "Cazadoras de moda",
 	    "image": "/assets/ban3.jpg",
 	    "link": "/c/gear-3"
 	  }
