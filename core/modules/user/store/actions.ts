@@ -18,7 +18,7 @@ const actions: ActionTree<UserState, RootState> = {
     const dbNamePrefix = storeView.storeCode ? storeView.storeCode + '-' : ''
     const user = localStorage.getItem(`${dbNamePrefix}shop/user/current-user`);
     if (user) {
-      context.commit(types.USER_INFO_LOADED, JSON.parse(user))  
+      context.commit(types.USER_INFO_LOADED, JSON.parse(user))
     }
 
     context.commit(types.USER_START_SESSION)
@@ -60,8 +60,7 @@ const actions: ActionTree<UserState, RootState> = {
         method: 'POST',
         mode: 'cors',
         headers: {
-          'Accept': 'application/json, text/plain, */*',
-          'Content-Type': 'application/json'
+          'Accept': 'application/json, text/plain, */*'
         },
         body: JSON.stringify({ email: email })
       }
@@ -78,8 +77,7 @@ const actions: ActionTree<UserState, RootState> = {
     return fetch(url, { method: 'POST',
       mode: 'cors',
       headers: {
-        'Accept': 'application/json, text/plain, */*',
-        'Content-Type': 'application/json'
+        'Accept': 'application/json, text/plain, */*'
       },
       body: JSON.stringify({ username: username, password: password })
     }).then(resp => { return resp.json() })
@@ -104,8 +102,7 @@ const actions: ActionTree<UserState, RootState> = {
     return fetch(url, { method: 'POST',
       mode: 'cors',
       headers: {
-        'Accept': 'application/json, text/plain, */*',
-        'Content-Type': 'application/json'
+        'Accept': 'application/json, text/plain, */*'
       },
       body: JSON.stringify({ customer: { email: email, firstname: firstname, lastname: lastname }, password: password })
     }).then(resp => { return resp.json() })
@@ -135,8 +132,7 @@ const actions: ActionTree<UserState, RootState> = {
         return fetch(url, { method: 'POST',
           mode: 'cors',
           headers: {
-            'Accept': 'application/json, text/plain, */*',
-            'Content-Type': 'application/json'
+            'Accept': 'application/json, text/plain, */*'
           },
           body: JSON.stringify({ refreshToken: refreshToken })
         }).then(resp => { return resp.json() })
@@ -205,8 +201,7 @@ const actions: ActionTree<UserState, RootState> = {
           payload: { method: 'GET',
             mode: 'cors',
             headers: {
-              'Accept': 'application/json, text/plain, */*',
-              'Content-Type': 'application/json'
+              'Accept': 'application/json, text/plain, */*'
             }
           }
         })
@@ -238,7 +233,7 @@ const actions: ActionTree<UserState, RootState> = {
     await TaskQueue.queue({ url: rootStore.state.config.users.me_endpoint,
       payload: {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: {},
         mode: 'cors',
         body: JSON.stringify(userData)
       },
@@ -256,7 +251,7 @@ const actions: ActionTree<UserState, RootState> = {
       payload: {
         method: 'POST',
         mode: 'cors',
-        headers: { 'Content-Type': 'application/json' },
+        headers: {},
         body: JSON.stringify(passwordData)
       }
     }).then((resp: any) => {
@@ -348,8 +343,7 @@ const actions: ActionTree<UserState, RootState> = {
           payload: { method: 'GET',
             mode: 'cors',
             headers: {
-              'Accept': 'application/json, text/plain, */*',
-              'Content-Type': 'application/json'
+              'Accept': 'application/json, text/plain, */*'
             }
           }
         }).then((resp: any) => {

@@ -26,7 +26,7 @@ const actions = {
   loadCms (context, {url, type}) {
     fetch(url, {
       method: 'GET',
-      headers: { 'Content-Type': 'application/json' },
+      headers: {},
       mode: 'cors'
     })
       .then(response => response.json())

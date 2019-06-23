@@ -66,8 +66,7 @@ const actions: ActionTree<ReviewState, RootState> = {
       await fetch(url, {
         method: 'POST',
         headers: {
-          'Accept': 'application/json, text/plain, */*',
-          'Content-Type': 'application/json'
+          'Accept': 'application/json, text/plain, */*'
         },
         body: JSON.stringify(review)
       })

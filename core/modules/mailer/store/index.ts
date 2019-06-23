@@ -16,8 +16,7 @@ export const module: Module<any, any> = {
               method: 'POST',
               mode: 'cors',
               headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
+                'Accept': 'application/json'
               },
               body: JSON.stringify({
                 ...letter,

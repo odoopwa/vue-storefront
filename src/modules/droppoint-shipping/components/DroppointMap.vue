@@ -168,7 +168,7 @@ export default {
           url: endpoint + '/zipcode/' + encodeURIComponent(this.searchZipcode),
           payload: {
             method: 'GET',
-            headers: {'Content-Type': 'application/json'},
+            headers: {},
             mode: 'cors'
           },
           callback_event: 'droppoint-map-update'

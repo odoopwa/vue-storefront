@@ -53,7 +53,6 @@ export class SearchAdapter {
     return fetch(urlGql, {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json',
           'Accept': 'application/json'
         },
         body: gqlQueryBody

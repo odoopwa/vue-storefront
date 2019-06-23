@@ -64,7 +64,7 @@ const actions: ActionTree<CartState, RootState> = {
         TaskQueue.execute({ url: rootStore.state.config.cart.pull_endpoint, // sync the cart
           payload: {
             method: 'GET',
-            headers: { 'Content-Type': 'application/json' },
+            headers: {},
             mode: 'cors'
           },
           silent: true,
@@ -97,7 +97,7 @@ const actions: ActionTree<CartState, RootState> = {
         TaskQueue.execute({ url: rootStore.state.config.cart.totals_endpoint, // sync the cart
           payload: {
             method: 'GET',
-            headers: { 'Content-Type': 'application/json' },
+            headers: {},
             mode: 'cors'
           },
           silent: true,
@@ -115,7 +115,7 @@ const actions: ActionTree<CartState, RootState> = {
         const task = { url: guestCart ? rootStore.state.config.cart.create_endpoint.replace('{{token}}', '') : rootStore.state.config.cart.create_endpoint, // sync the cart
           payload: {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
+            headers: {},
             mode: 'cors'
           },
           silent: true,
@@ -133,7 +133,7 @@ const actions: ActionTree<CartState, RootState> = {
     return TaskQueue.execute({ url: rootStore.state.config.cart.updateitem_endpoint, // sync the cart
       payload: {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: {},
         mode: 'cors',
         body: JSON.stringify({
           cartItem: cartItem
@@ -156,7 +156,7 @@ const actions: ActionTree<CartState, RootState> = {
     return TaskQueue.execute({ url: rootStore.state.config.cart.deleteitem_endpoint, // sync the cart
       payload: {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: {},
         mode: 'cors',
         body: JSON.stringify({
           cartItem: cartItem
@@ -336,7 +336,7 @@ const actions: ActionTree<CartState, RootState> = {
       TaskQueue.execute({ url: rootStore.state.config.cart.paymentmethods_endpoint,
         payload: {
           method: 'GET',
-          headers: { 'Content-Type': 'application/json' },
+          headers: {},
           mode: 'cors'
         },
         silent: true
@@ -365,7 +365,7 @@ const actions: ActionTree<CartState, RootState> = {
       TaskQueue.execute({ url: rootStore.state.config.cart.shippingmethods_endpoint,
         payload: {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
+          headers: {},
           mode: 'cors',
           body: JSON.stringify({
             address: address
@@ -407,7 +407,7 @@ const actions: ActionTree<CartState, RootState> = {
         TaskQueue.execute({ url: rootStore.state.config.cart.shippinginfo_endpoint,
           payload: {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
+            headers: {},
             mode: 'cors',
             body: JSON.stringify({
               addressInformation: {
@@ -435,7 +435,7 @@ const actions: ActionTree<CartState, RootState> = {
         TaskQueue.execute({ url: rootStore.state.config.cart.deletecoupon_endpoint,
           payload: {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
+            headers: {},
             mode: 'cors'
           },
           silent: true
@@ -457,7 +457,7 @@ const actions: ActionTree<CartState, RootState> = {
         TaskQueue.execute({ url: rootStore.state.config.cart.applycoupon_endpoint.replace('{{coupon}}', couponCode),
           payload: {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
+            headers: {},
             mode: 'cors'
           },
           silent: true

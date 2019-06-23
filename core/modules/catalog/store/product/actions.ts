@@ -115,7 +115,7 @@ const actions: ActionTree<ProductState, RootState> = {
     return TaskQueue.execute({ url: rootStore.state.config.products.endpoint + '/render-list?skus=' + encodeURIComponent(skus.join(',')) + '&currencyCode=' + encodeURIComponent(storeView.i18n.currencyCode) + '&storeId=' + encodeURIComponent(storeView.storeId), // sync the cart
       payload: {
         method: 'GET',
-        headers: { 'Content-Type': 'application/json' },
+        headers: {},
         mode: 'cors'
       },
       callback_event: 'prices-after-sync'
@@ -216,7 +216,7 @@ const actions: ActionTree<ProductState, RootState> = {
   },
   /**
    * Load required configurable attributes
-   * @param context 
+   * @param context
    * @param product
    */
   loadConfigurableAttributes(context, { product }) {

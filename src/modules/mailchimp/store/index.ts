@@ -27,7 +27,7 @@ export const module: Module<mailchimpState, any> ={
         return new Promise((resolve, reject) => {
           fetch(config.mailchimp.endpoint, {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
+            headers: {},
             mode: 'cors',
             body: JSON.stringify({ email })
           }).then(res => {
@@ -46,7 +46,7 @@ export const module: Module<mailchimpState, any> ={
         return new Promise((resolve, reject) => {
           fetch(config.mailchimp.endpoint, {
             method: 'DELETE',
-            headers: { 'Content-Type': 'application/json' },
+            headers: {},
             mode: 'cors',
             body: JSON.stringify({ email })
           }).then(res => {

@@ -42,7 +42,7 @@ const actions: ActionTree<OrderState, RootState> = {
         const task:any = await TaskQueue.execute({ url: rootStore.state.config.orders.endpoint, // sync the order
           payload: {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
+            headers: {},
             mode: 'cors',
             body: JSON.stringify(order)
           },

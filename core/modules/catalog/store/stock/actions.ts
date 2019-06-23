@@ -19,7 +19,7 @@ const actions: ActionTree<StockState, RootState> = {
         TaskQueue.queue({ url: rootStore.state.config.stock.endpoint + '/check?sku=' + encodeURIComponent(product.sku),
           payload: {
             method: 'GET',
-            headers: { 'Content-Type': 'application/json' },
+            headers: {},
             mode: 'cors'
           },
           product_sku: product.sku,
@@ -41,7 +41,7 @@ const actions: ActionTree<StockState, RootState> = {
         TaskQueue.execute({ url: rootStore.state.config.stock.endpoint + '/list?skus=' + encodeURIComponent(skus.join(',')),
           payload: {
             method: 'GET',
-            headers: { 'Content-Type': 'application/json' },
+            headers: {},
             mode: 'cors'
           },
           skus: skus

@@ -158,7 +158,7 @@ const invokeClientEntry = async () => {
             return fetch(config.orders.endpoint,
               {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
+                headers: {},
                 body: JSON.stringify(orderData)
               }).then(response => {
               const contentType = response.headers.get('content-type')

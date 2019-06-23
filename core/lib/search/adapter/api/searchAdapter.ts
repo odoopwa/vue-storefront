@@ -80,8 +80,7 @@ export class SearchAdapter {
     return fetch(url, { method: rootStore.state.config.elasticsearch.queryMethod,
       mode: 'cors',
       headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
+        'Accept': 'application/json'
       },
       body: rootStore.state.config.elasticsearch.queryMethod === 'POST' ? JSON.stringify(ElasticsearchQueryBody) : null
     }).then(resp => { return resp.json() })
