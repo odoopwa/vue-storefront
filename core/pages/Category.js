@@ -91,7 +91,7 @@ export default {
         filterValues: defaultFilters, // TODO: assign specific filters/ attribute codes dynamicaly to specific categories
         includeFields: store.state.config.entities.optimize && Vue.prototype.$isServer ? store.state.config.entities.attribute.includeFields : null
       })
-      const parentCategory = await store.dispatch('category/single', { key: store.state.config.products.useMagentoUrlKeys ? 'url_key' : 'slug', value: route.params.slug })
+      const parentCategory = {id: route.params.slug}
       let query = store.getters['category/getCurrentCategoryProductQuery']
       if (!query.searchProductQuery) {
         store.dispatch('category/mergeSearchOptions', {
