@@ -73,7 +73,7 @@ export class SearchAdapter {
       throw new Error('Query.index and Query.type are required arguments for executing ElasticSearch query')
     }
     if (rootStore.state.config.elasticsearch.queryMethod === 'GET') {
-      httpQuery.request = JSON.stringify(ElasticsearchQueryBody)
+      httpQuery.request = JSON.stringify(Request.searchQuery)
     }
     url = url + '/' + encodeURIComponent(Request.index) + '/' + encodeURIComponent(Request.type) + '/_search'
     url = url + '?' + buildURLQuery(httpQuery)
