@@ -21,7 +21,6 @@
       </div>
       <tile-links />
     </section>
-    <Onboard/>
   </div>
 </template>
 
@@ -38,7 +37,6 @@ import ProductListing from 'theme/components/core/ProductListing'
 import HeadImage from 'theme/components/core/blocks/MainSlider/HeadImage'
 
 // Theme local components
-import Onboard from 'theme/components/theme/blocks/Home/Onboard'
 import PromotedOffers from 'theme/components/theme/blocks/PromotedOffers/PromotedOffers'
 import TileLinks from 'theme/components/theme/blocks/TileLinks/TileLinks'
 import { Logger } from '@vue-storefront/core/lib/logger'
@@ -46,7 +44,6 @@ export default {
   mixins: [Home],
   components: {
     HeadImage,
-    Onboard,
     ProductListing,
     PromotedOffers,
     TileLinks
