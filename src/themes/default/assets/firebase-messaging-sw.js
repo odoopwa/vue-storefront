@@ -37,21 +37,21 @@ messaging.setBackgroundMessageHandler(function(payload) {
 messaging.getToken().then((currentToken) => {
   if (currentToken) {
     console.log('currentToken: ' + currentToken);
-    var http = new XMLHttpRequest();
     var url = "https://cloud.wisconsinjeans.com/api/notifications/suscribe";
     var token = currentToken;
-    //http.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-    http.open("POST", url, true);
-
-    http.onreadystatechange = function() {
-        console.log(http);
-        if(http.readyState == 4 && http.status == 200) { 
-           console.log(http.responseText);
-        }
-    }
     var body = JSON.stringify({token: token});
-    console.log(body);
-    http.send(body);
+    fetch(url, {
+        method: 'post',
+        headers: {
+        },
+        body: body
+      })
+      .then(function (data) {
+        console.log('Request succeeded with JSON response', data);
+      })
+      .catch(function (error) {
+        console.log('Request failed', error);
+      });
   } else {
     // Show permission request.
     console.log('No Instance ID token available. Request permission to generate one.');
