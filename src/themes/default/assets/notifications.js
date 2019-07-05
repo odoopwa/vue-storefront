@@ -1,5 +1,3 @@
-alert('notifications.');
-
 // app's Firebase project configuration
 var firebaseConfig = {
   messagingSenderId: "947618845905",
