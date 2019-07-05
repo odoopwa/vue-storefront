@@ -33,6 +33,15 @@ export default {
       async: true,
       integrity: 'sha384-GOaSLecPIMCJksN83HLuYf9FToOiQ2Df0+0ntv7ey8zjUHESXhthwvq9hXAZTifA',
       crossorigin: 'anonymous'
+    },
+    {
+      src: 'https://www.gstatic.com/firebasejs/6.1.1/firebase-app.js'
+    },
+    {
+      src: 'https://www.gstatic.com/firebasejs/6.1.1/firebase-messaging.js'
+    },
+    {
+      src: '/assets/notifications.js'
     }
   ]
 }
