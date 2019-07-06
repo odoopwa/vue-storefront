@@ -80,12 +80,12 @@ const actions: ActionTree<ProductState, RootState> = {
           }
 
           if (typeof catForBreadcrumbs !== 'undefined') {
-            context.dispatch('category/single', { key: 'id', value: catForBreadcrumbs.id }, { root: true }).then(() => { // this sets up category path and current category
+            /* context.dispatch('category/single', { key: 'id', value: catForBreadcrumbs.id }, { root: true }).then(() => { // this sets up category path and current category
               setbrcmb(context.rootGetters['category/getCurrentCategoryPath'])
             }).catch(err => {
               setbrcmb(context.rootGetters['category/getCurrentCategoryPath'])
               Logger.error(err)()
-            })
+            }) */
           } else {
             setbrcmb(context.rootGetters['category/getCurrentCategoryPath'])
           }
