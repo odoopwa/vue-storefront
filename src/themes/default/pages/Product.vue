@@ -221,7 +221,6 @@
         </div>
       </div>
     </section>
-    <reviews v-show="OnlineOnly"/>
     <related-products
       type="upsell"
       :heading="$t('We found other products you might like')"
@@ -236,7 +235,6 @@ import { minValue } from 'vuelidate/lib/validators'
 import Product from '@vue-storefront/core/pages/Product'
 import VueOfflineMixin from 'vue-offline/mixin'
 import RelatedProducts from 'theme/components/core/blocks/Product/Related.vue'
-import Reviews from 'theme/components/core/blocks/Reviews/Reviews.vue'
 import AddToCart from 'theme/components/core/AddToCart.vue'
 import GenericSelector from 'theme/components/core/GenericSelector'
 import ColorSelector from 'theme/components/core/ColorSelector.vue'
@@ -268,7 +266,6 @@ export default {
     ProductTile,
     PromotedOffers,
     RelatedProducts,
-    Reviews,
     SizeSelector,
     WebShare,
     BaseInputNumber
