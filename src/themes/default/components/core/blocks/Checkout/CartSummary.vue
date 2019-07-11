@@ -31,22 +31,19 @@
         {{ $t('Safety') }}
       </h4>
       <p class="cl-tertiary lh20">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Nullam sed tempor lorem. Vivamus volutpat eros id est semper accumsan.
+        Wisconsin Jeans cumple con los estándares de seguridad de datos reconocidos y certificados a nivel mundial para garantizar la seguridad de tus datos e información. Wisconsin Jeans también cumple con los estrictos estándares de seguridad de datos exigidos por la ley española.
       </p>
       <h4 class="h3 mb0" v-if="!isVirtualCart">
         {{ $t('Shipping') }}
       </h4>
       <p class="cl-tertiary lh20" v-if="!isVirtualCart">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Nullam sed tempor lorem. Vivamus volutpat eros id est semper accumsan.
+        Realizamos envíos dentro de la comunidad de Cataluña. La mayoría de los pedidos realizados antes de la 1:30 pm se envían el mismo día. Se aplican restricciones.
       </p>
       <h4 class="h3 mb0">
         {{ $t('Returns') }}
       </h4>
       <p class="cl-tertiary lh20">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Nullam sed tempor lorem. Vivamus volutpat eros id est semper accumsan.
+        Aceptamos devoluciones en la mayoría de los artículos. Sin embargo, los artículos deben estar nuevos, sin abrir y recibidos nuevamente en Wisconsin Jeans dentro de los 30 días de la compra inicial.
       </p>
     </div>
   </div>
