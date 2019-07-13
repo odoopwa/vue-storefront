@@ -8,7 +8,6 @@
         <div class="row between-xs middle-xs" v-if="!isCheckoutPage">
           <div class="col-sm-4 col-xs-2 middle-xs" />
           <div class="col-xs-2 visible-xs">
-            <search-icon class="p15 icon pointer" />
           </div>
           <div class="col-sm-4 col-xs-4 center-xs pt5">
             <div>
@@ -16,7 +15,6 @@
             </div>
           </div>
           <div class="col-xs-2 visible-xs">
-            <wishlist-icon class="p15 icon pointer" />
           </div>
           <div class="col-sm-4 col-xs-2 end-xs" />
         </div>

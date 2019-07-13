@@ -159,30 +159,6 @@
                 class="col-xs-12 col-sm-4 col-md-6"
               />
             </div>
-            <div class="row py40 add-to-buttons">
-              <div class="col-xs-6 col-sm-3 col-md-6">
-                <wishlist-button :product="product" />
-              </div>
-              <div class="col-xs-6 col-sm-3 col-md-6 product__add-to-compare">
-                <button
-                  @click="isOnCompare ? removeFromList('compare') : addToList('compare')"
-                  class="
-                    p0 inline-flex middle-xs bg-cl-transparent brdr-none
-                    action h5 pointer cl-secondary
-                  "
-                  type="button"
-                  data-testid="addToCompare"
-                >
-                  <i class="pr5 material-icons">compare</i>
-                  <template v-if="!isOnCompare">
-                    {{ $t('Add to compare') }}
-                  </template>
-                  <template v-else>
-                    {{ $t('Remove from compare') }}
-                  </template>
-                </button>
-              </div>
-            </div>
           </div>
         </section>
       </div>
