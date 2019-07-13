@@ -67,4 +67,7 @@ export default {
       margin-left: 0;
     }
   }
+  img {
+    max-width: 100% !important;
+  }
 </style>
