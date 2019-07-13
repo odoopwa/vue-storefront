@@ -1,4 +1,13 @@
 <template>
+  <button
+    type="button"
+    :aria-label="$t('Open search panel')"
+    class="bg-cl-transparent brdr-none inline-flex"
+    @click="toggleSearchpanel"
+    data-testid="openSearchPanel"
+  >
+    <i class="material-icons">search</i>
+  </button>
 </template>
 
 <script>
