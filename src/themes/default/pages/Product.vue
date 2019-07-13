@@ -226,7 +226,6 @@
       :heading="$t('We found other products you might like')"
     />
     <promoted-offers single-banner />
-    <related-products type="related" />
   </div>
 </template>
 
