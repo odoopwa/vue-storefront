@@ -4,7 +4,7 @@
 	    "title": "Son tendencia",
 	    "subtitle": "Conoce los nuevos vaqueros",
 	    "image": "/assets/ban1.jpg",
-	    "link": "/c/women-20"
+	    "link": "/c/14"
 	  }
   ],
   "smallBanners": [
@@ -12,13 +12,13 @@
       "title": "Temporada de verano",
       "subtitle": "Las camisetas que buscas",
       "image": "/assets/ban2.jpg",
-      "link": "/c/men-11"
+      "link": "/c/12"
     },
     {
       "title": "Con estilo propio",
       "subtitle": "Cazadoras de moda",
       "image": "/assets/ban3.jpg",
-      "link": "/c/gear-3"
+      "link": "/c/11"
     }
   ],
   "productBanners": [
@@ -26,7 +26,7 @@
 	    "title": "Con estilo propio",
 	    "subtitle": "Cazadoras de moda",
 	    "image": "/assets/ban3.jpg",
-	    "link": "/c/gear-3"
+	    "link": "/c/11"
 	  }
   ]
 }
